@@ -1,0 +1,107 @@
+.wraper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-flow: row wrap;
+}
+.card-wraper {
+  display: flex;
+  flex-flow: column nowrap;
+  border: 1px solid black;
+  width: 250px;
+  margin: 5px;
+}
+.card-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 120px;
+  font-size: 26px;
+}
+.card-price {
+  text-align: center;
+  display: flex;
+  flex-flow: column wrap;
+}
+.card-price-currency {
+  display: flex;
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-items: flex-end;
+  padding-left: 20px;
+  height: 80px;
+}
+.card-price-rate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 55px;
+}
+.card-price-term {
+  display: flex;
+  justify-content: flex-end;
+  align-content: flex-end;
+  align-items: flex-start;
+  padding-right: 20px;
+  height: 80px;
+}
+.card-speed {
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.card-description {
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  line-height: 30px;
+  background-color: #dcdcdc;
+}
+.title-bg300 {
+  background-color: hsl(207, 27%, 36%);
+  color: #ffffff;
+  border: 1px solid white;
+}
+.title-bg450 {
+  background-color: #2e8b57;
+  color: #ffffff;
+  border: 1px solid white;
+}
+.title-bg550 {
+  background-color: #fa8072;
+  color: #ffffff;
+  border: 1px solid white;
+}
+.title-bg1000 {
+  background-color: #000000;
+  color: #ffffff;
+  border: 1px solid white;
+}
+.price-bg300 {
+  background-color: #778899;
+  color: #ffffff;
+}
+.price-bg450 {
+  background-color: #228b22;
+  color: #ffffff;
+}
+.price-bg550 {
+  background-color: #f08080;
+  color: #ffffff;
+}
+.price-bg1000 {
+  background-color: #696969;
+  color: #ffffff;
+}
+.selected {
+  width: 400px;
+  height: 500px;
+  box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+}

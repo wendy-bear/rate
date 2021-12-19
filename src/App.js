@@ -1,24 +1,51 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Rate from "./components/tarif";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Rate
+        title="Безлимитный 300"
+        price="300"
+        speed="До 10 Мбит/сек."
+        description="Объем включенного трафика не ограничен"
+        isRate300={true}
+        isRate450={false}
+        isRate550={false}
+        isRate1000={false}
+      ></Rate>
+      <Rate
+        title="Безлимитный 450"
+        price="450"
+        speed="До 50 Мбит/сек."
+        description="Объем включенного трафика не ограничен"
+        isRate300={false}
+        isRate450={true}
+        isRate550={false}
+        isRate1000={false}
+      ></Rate>
+      <Rate
+        title="Безлимитный 550"
+        price="550"
+        speed="До 100 Мбит/сек."
+        description="Объем включенного трафика не ограничен"
+        isRate300={false}
+        isRate450={false}
+        isRate550={true}
+        isRate1000={false}
+        isSelected={true}
+      ></Rate>
+      <Rate
+        title="Безлимитный 1000"
+        price="1000"
+        speed="До 200 Мбит/сек."
+        description="Объем включенного трафика не ограничен"
+        isRate300={false}
+        isRate450={false}
+        isRate550={false}
+        isRate1000={true}
+      ></Rate>
+    </>
   );
 }
 
