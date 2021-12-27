@@ -11,6 +11,18 @@ function Rate({ title, price, speed, description }) {
     setSelect(!select);
   };
 
+  const [lamp, setLamp] = useState(false);
+
+  const handleLamp = () => {
+    setLamp(!lamp);
+  };
+
+  const [pink, setPink] = useState(false);
+
+  const handlePink = () => {
+    setPink(!pink);
+  };
+
   return (
     <div className="wraper">
       <div
@@ -20,11 +32,21 @@ function Rate({ title, price, speed, description }) {
         <div className={"card-title " + (titleClassname || "")}>{title}</div>
         <div className={"card-price " + (priceClassname || "")}>
           <div className="card-price-currency">руб.</div>
-          <div className="card-price-rate">{price}</div>
+          <div
+            onClick={handlePink}
+            className={"card-price-rate " + (pink ? "pink" : "")}
+          >
+            {price}
+          </div>
           <div className="card-price-term">/мес.</div>
         </div>
         <div className="card-speed">{speed}</div>
-        <div className="card-description">{description}</div>
+        <div
+          onClick={handleLamp}
+          className={"card-description " + (lamp ? "light" : "")}
+        >
+          {description}
+        </div>
       </div>
     </div>
   );
